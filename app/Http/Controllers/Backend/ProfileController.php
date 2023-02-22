@@ -26,8 +26,8 @@ class ProfileController extends Controller
 
     public function ProfileStore(Request $request) {
         $data = User::find(Auth::user()->id);
-        $data->firstname = $request->firstname;
-        $data->lastname = $request->lastname;
+        //$data->firstname = $request->firstname;
+        //$data->lastname = $request->lastname;
         $data->email = $request->email;
         $data->mobile = $request->mobile;
         $data->gender = $request->gender;

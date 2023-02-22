@@ -6,11 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 
+
 class UserController extends Controller
 {
     public function UserView(){
         //$allData = User::all();
-        $data['allData'] = User::all();
+        $data['allData'] = User::where('usertype', '!=',  "Administrator")->get();
         return view('backend.user.view_user', $data);
     }
 
@@ -39,6 +40,7 @@ class UserController extends Controller
         $data->register = $request->register;
         $data->nationality = $request->nationality;
         $data->status = 0;
+        $data->rank = $request->rank;
 
         $data->save();
 
@@ -66,6 +68,7 @@ class UserController extends Controller
         $data->section = $request->section;
         $data->register = $request->register;
         $data->nationality = $request->nationality;
+        $data->rank = $request->rank;
 
         $data->save();
 

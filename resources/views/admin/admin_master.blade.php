@@ -17,35 +17,36 @@
   	<link rel="stylesheet" href="{{ asset('backend/css/style.css') }}">
   	<link rel="stylesheet" href="{{ asset('backend/css/skin_color.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-     
-  </head>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <style>#sortable { list-style-type: none; margin: 0; padding: 0;</style>
 
-<body class="hold-transition dark-skin sidebar-mini theme-primary fixed">
+    <body class="hold-transition dark-skin sidebar-mini theme-primary fixed">
 	
-<div class="wrapper">
+    <div class="wrapper">
 
-  @include('admin.body.header')
-  <!-- Left side column. contains the logo and sidebar -->
-  @include('admin.body.sidebar')
+      @include('admin.body.header')
+      <!-- Left side column. contains the logo and sidebar -->
+      @include('admin.body.sidebar')
 
-  <!-- Content Wrapper. Contains page content -->
-  @yield('admin')
-  <!-- /.content-wrapper -->
+      <!-- Content Wrapper. Contains page content -->
+      @yield('admin')
+      <!-- /.content-wrapper -->
 
-  @include('admin.body.footer')
+      @include('admin.body.footer')
 
-  <!-- Control Sidebar -->
-  <!-- /.control-sidebar -->
-  
-  <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
-  <div class="control-sidebar-bg"></div>
-  
-</div>
-<!-- ./wrapper -->
+      <!-- Control Sidebar -->
+      <!-- /.control-sidebar -->
+      
+      <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+      
+    </div>
+    <!-- ./wrapper -->
   	
 	<!-- Vendor JS -->
+
 	<script src="{{ asset('backend/js/vendors.min.js') }}"></script>
-    <script src="{{ asset('../assets/icons/feather-icons/feather.min.js') }}"></script>	
+  <script src="{{ asset('../assets/icons/feather-icons/feather.min.js') }}"></script>	
 	<script src="{{ asset('../assets/vendor_components/easypiechart/dist/jquery.easypiechart.js') }}"></script>
 	<script src="{{ asset('../assets/vendor_components/apexcharts-bundle/irregular-data-series.js') }}"></script>
 	<script src="{{ asset('../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js') }}"></script>
@@ -75,7 +76,7 @@
         .then((willDelete) => {
           if (willDelete) {
             window.location.href = link
-            swal("The user has been deleted!", {
+            swal("The item has been deleted!", {
               icon: "success",
             });
           } /*else {
@@ -107,7 +108,6 @@
       }
     @endif
   </script>
-	
 	
 </body>
 </html>

@@ -155,6 +155,16 @@
 								</div>
 							</div>
 
+							<div class="col-md-6">
+								<div class="form-group">
+									<h5>Rank <span class="text-danger">*</span></h5>
+									<div class="controls">
+										<input type="text" name="rank" class="form-control" required=""> <div class="help-block"></div></div>
+								</div>
+							</div>
+
+
+
 
 						</div>
 							

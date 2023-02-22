@@ -14,7 +14,7 @@
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
 								<li class="breadcrumb-item" aria-current="page">Esmee IB</li>
-								<li class="breadcrumb-item active" aria-current="page">Add individual user</li>
+								<li class="breadcrumb-item active" aria-current="page">Manage Profile</li>
 							</ol>
 						</nav>
 					</div>
@@ -39,7 +39,7 @@
 					  <div class="row">
 						<div class="col-12">
 
-						<div class="row">
+						<!--<div class="row">
 							
 							<div class="col-md-6">
 								<div class="form-group">
@@ -58,10 +58,10 @@
 								</div>
 							</div>
 
-						</div>  <!-- End row -->
+						</div>  End row -->
 
 
-						<div class="row">
+						<!--<div class="row">
 							
 							<div class="col-md-6">
 								<div class="form-group">
@@ -70,7 +70,7 @@
 										<input type="email" name="email" class="form-control" required="" value="{{ $editData->email }}" style="background-color: white; color: black"> <div class="help-block"></div></div>
 								</div>
 
-							</div>
+							</div>-->
 
 							<div class="col-md-6">
 								<div class="form-group">
@@ -113,7 +113,6 @@
 							</div>
 
 						</div>  <!-- End row -->
-
 							
 						</div>
 
